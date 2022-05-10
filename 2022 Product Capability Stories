@@ -43,8 +43,8 @@ As an instructional designer, I have an avaiable UI interface that was created i
 ## Stories -
 
 #UI -1 
-As an ID, it collects my email and set up password and communciates with with server to capture user profile.
-    AC: A launchable electron inteface for both Mac and PC installs that prompts for user name and password, communicates it back to a server and either creates a new user or validates existing user.  This functionality should have forgotten password functionality.
+As an ID, the UI collects my email and set up password and communciates with with server to capture user profile.
+    AC: A launchable java inteface for both Mac and PC installs that prompts for user name and password, communicates it back to a server and either creates a new user or validates existing user.  This functionality should have forgotten password functionality.
 
 #UI-2
 As an ID, I have customizable settings in the UI.  This list will grow as develpment continues but starting functinality will include capturing the LRS secret and password along with the LRS endpoint.  
