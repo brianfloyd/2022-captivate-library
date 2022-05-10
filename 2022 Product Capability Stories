@@ -1,0 +1,45 @@
+### Product Capability Stories
+
+As of 5/1/22 I have set out to rewrite SuperWrapper.  This wrapper was origninally written in 2020 and my coding abilities, and thought processes surrounding the approach have evolved.  The purpose of this document is to set up an Agile like system of development broken into 3 major components.
+
+    - Rewrite of xAPI controller to be as conformant as possible to xAPI   
+      profiles, and further allow customization, but not require it
+    
+    - Rewrite of Captivate functionality. This component includes creating   
+      a completely independent 'class' of functions inside of the wrapper for Adobe Captivate.  The reasoning for this is to extend the controller to other tools in the future.  Moving forward the Captivate portion of the wrapper could be considered 'A plug-in' in the way it operates.   The xAPI controller should still be 100% functional even if the Captivate class is removed from the code. No dependecies!
+
+    - Create a user UI to install warpper.  The current Captivate wrapper  
+      requires the user to assign the LRS and customize the wrapper settings within the code.  It also requires setting up a file structure in a very particular way for uploaded zip package.  This is a barrier to entry for less tech saavy consumers
+
+The long term vision for this project is to create an xAPI service that is fully customizable through a UI to add to a variety of e-learning publish outputs that has a robust 'free' offering for the community to use, and then a more advanced 'subscription' or per usage model that allows for mass production, and ultimate customizability.
+
+
+### Controller Stories
+
+As an xapi interface, when installed in a Captivate library I automatically install my components making it unnecessary for any special javascript in Captivate to make it work. (Current state is init() must be placed on slide 1)
+
+As the developer, I need to identify all the actions in that are reportable in Adobe Captivate
+
+As the developer, identify take identified actions and find conforming xAPI profile wherever possible.
+
+As the developer, create an e-learning style presentation for each action.  In beginning development this will just be a raw action with little format and design but will become detailed as the capability is implemented with how to best utilize the functionality.
+
+As the developer, update and design conformance for Scorm publish (LMS upload)
+
+As the developer, update and design conformance for HTML publish
+
+As the developer, update and design conformance for xAPI publish
+
+
+### UI Stories
+
+## Epic -
+
+As an instructional designer, I have an avaiable UI interface that was created in Electron that allows me to drag and drop my Adobe publish package to install SuperWrapper
+
+# Stories -
+
+As an ID, it collects my email and set up password and communciates with with server to capture user profile.
+
+As an ID, I have customizable settings in the UI.  This list will grow as develpment continues but starting functinality will include capturing the LRS secret and password along with the LRS endpoint.  
+    AC: An input box for LRS credentials, once entered the a 'test' statement is sent to the LRS with accepted criteria being a HTTP 200 status.  The ID should be prompted if the credentials are not working correctly.
