@@ -30,6 +30,9 @@ As the developer, update and design conformance for HTML publish
 
 As the developer, update and design conformance for xAPI publish
 
+As the developer, I will add a feature that allows for multiple LRS's at once to be communicated with. 
+    AC: Create an Array of LRS credentials that are set up and authenticated allowing to send singular statemetns to multiple LRS's in concert.
+
 
 # UI Stories
 
@@ -52,7 +55,8 @@ As an ID, once entering my LRS credentials I am able to name the LRS connection 
     AC: User is presented a checkbox that when checked will save the entered LRS credentials and password to a secure server.
 
 #UI-4
-As and ID, on the settings screen I am able to see previous LRS connections that I have saved by name and it's endpoint.  Secret and Key will not be displayed or avaialble anywhere in the UI once stored.
+As an ID, on the settings screen I am able to see previous LRS connections that I have saved by name and it's endpoint.  Secret and Key will not be displayed or avaialble anywhere in the UI once stored.
     AC: Previously stored LRS's are listed and selectable for use. If no LRS has been saved #UI-3 will be the default behavior (prompting for LRS)
 
-#UI-5 A gargabe can icon is presented to me along with ability to check 
+#UI-5 As an ID, a  gargabe can icon is presented to me along with ability to check multiple LRS's.  Clicking the garbage can will remove stored LRS after a confirmation modal is displayed.  Checking multiple LRS's will set up the code to report to multiple destinations.
+    AC: User is able to remove previously stored LRS's with the garbage can icon.  Checking multiple LRS's will call the server and aquire the credentials for each for injection into the Captivate package code. Brian will rewrite the wrapper to account for multiple LRS's in Array
