@@ -1,4 +1,4 @@
-### Product Capability Stories
+# Product Capability Stories
 
 As of 5/1/22 I have set out to rewrite SuperWrapper.  This wrapper was origninally written in 2020 and my coding abilities, and thought processes surrounding the approach have evolved.  The purpose of this document is to set up an Agile like system of development broken into 3 major components.
 
@@ -31,15 +31,28 @@ As the developer, update and design conformance for HTML publish
 As the developer, update and design conformance for xAPI publish
 
 
-### UI Stories
+# UI Stories
 
 ## Epic -
 
 As an instructional designer, I have an avaiable UI interface that was created in Electron that allows me to drag and drop my Adobe publish package to install SuperWrapper
 
-# Stories -
+## Stories -
 
+#UI -1 
 As an ID, it collects my email and set up password and communciates with with server to capture user profile.
+    AC: A launchable electron inteface for both Mac and PC installs that prompts for user name and password, communicates it back to a server and either creates a new user or validates existing user.  This functionality should have forgotten password functionality.
 
+#UI-2
 As an ID, I have customizable settings in the UI.  This list will grow as develpment continues but starting functinality will include capturing the LRS secret and password along with the LRS endpoint.  
-    AC: An input box for LRS credentials, once entered the a 'test' statement is sent to the LRS with accepted criteria being a HTTP 200 status.  The ID should be prompted if the credentials are not working correctly.
+    AC: An input box for LRS credentials (key, secret, password), once entered the a 'test' statement is sent to the LRS with accepted criteria being a HTTP 200 status.  The ID should be prompted if the credentials are not working correctly.
+
+#UI-3
+As an ID, once entering my LRS credentials I am able to name the LRS connection and save it to my profile if I desire.
+    AC: User is presented a checkbox that when checked will save the entered LRS credentials and password to a secure server.
+
+#UI-4
+As and ID, on the settings screen I am able to see previous LRS connections that I have saved by name and it's endpoint.  Secret and Key will not be displayed or avaialble anywhere in the UI once stored.
+    AC: Previously stored LRS's are listed and selectable for use. If no LRS has been saved #UI-3 will be the default behavior (prompting for LRS)
+
+#UI-5 A gargabe can icon is presented to me along with ability to check 
