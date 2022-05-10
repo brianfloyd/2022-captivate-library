@@ -38,7 +38,7 @@ As the developer, I will add a feature that allows for multiple LRS's at once to
 
 ## Epic -
 
-As an instructional designer, I have an avaiable UI interface that was created in Java that allows me to drag and drop my Adobe publish package to install SuperWrapper
+As an instructional designer, I have an avaiable UI web service interface created in Java that allows me to drag and drop my Adobe publish package to install SuperWrapper
 
 ## Stories -
 
@@ -60,3 +60,11 @@ As an ID, on the settings screen I am able to see previous LRS connections that 
 
 #UI-5 As an ID, a  gargabe can icon is presented to me along with ability to check multiple LRS's.  Clicking the garbage can will remove stored LRS after a confirmation modal is displayed.  Checking multiple LRS's will set up the code to report to multiple destinations.
     AC: User is able to remove previously stored LRS's with the garbage can icon.  Checking multiple LRS's will call the server and aquire the credentials for each for injection into the Captivate package code. Brian will rewrite the wrapper to account for multiple LRS's in Array
+
+#UI-6 As an ID, I am presented with a list of verbs that are available by scanning the current version of superwrapper code and pulling the current Verb list into the web service.  Each verb will present a checkbox that is checked by default, but able to be unselected.
+    
+
+#UI-7 As the web service developer, I will design a flag system for each feature that will denote subscription user or free service user.  The purpose of these flags is to show premium features, but to low-light them and make them unaccessible to free accounts.
+  AC: A boolean value that when true allows full usage of a product feature, but when false only shows it's availability as a low-lighted unavaialbe feature
+
+  
